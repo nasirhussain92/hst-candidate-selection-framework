@@ -1,1 +1,13 @@
-..
+=== GENERAL scenario ===
+static  r mean=0.6798 sd=0.0095
+fusion  r mean=0.6918 sd=0.0074
+neural  r mean=0.9588 sd=0.0011
+fusion vs neural: t=-103.1802 p=0.000000
+static vs neural: t=-84.9440 p=0.000000
+
+=== FAVORABLE scenario ===
+static  r mean=0.4605 sd=0.0131
+fusion  r mean=0.6211 sd=0.0066
+neural  r mean=0.9687 sd=0.0014
+fusion vs neural: t=-147.3192 p=0.000000
+static vs neural: t=-113.7564 p=0.000000

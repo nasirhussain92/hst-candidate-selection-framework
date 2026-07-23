@@ -1,0 +1,39 @@
+
+=== GENERAL scenario vs true (latent) outcome ===
+static-only  r = 0.6798 (sd 0.0095)
+fusion       r = 0.6918 (sd 0.0074)
+diff (fusion-static) mean=0.0120 sd=0.0033
+paired t-test: t=10.9825, p=0.000002
+
+=== GENERAL scenario vs noisy realized outcome ===
+static-only  r = 0.5650 (sd 0.0133)
+fusion       r = 0.5707 (sd 0.0140)
+diff (fusion-static) mean=0.0057 sd=0.0035
+paired t-test: t=4.9187, p=0.000826
+
+=== FAVORABLE (growth-weighted) scenario vs true (latent) outcome ===
+static-only  r = 0.4605 (sd 0.0131)
+fusion       r = 0.6211 (sd 0.0066)
+diff (fusion-static) mean=0.1606 sd=0.0112
+paired t-test: t=43.0329, p=0.000000
+
+=== FAVORABLE (growth-weighted) scenario vs noisy realized outcome ===
+static-only  r = 0.3224 (sd 0.0183)
+fusion       r = 0.4325 (sd 0.0133)
+diff (fusion-static) mean=0.1100 sd=0.0148
+paired t-test: t=22.2571, p=0.000000
+
+=== FAIRNESS AUDIT (favorable scenario, fusion model) ===
+quality-quintile 0: n_acc=30, n_no_acc=210, mean_pred_acc=-0.2506, mean_pred_no_acc=-0.2125, gap=-0.0381
+quality-quintile 1: n_acc=35, n_no_acc=205, mean_pred_acc=-0.0679, mean_pred_no_acc=-0.0401, gap=-0.0278
+quality-quintile 2: n_acc=37, n_no_acc=203, mean_pred_acc=-0.0718, mean_pred_no_acc=0.0787, gap=-0.1505
+quality-quintile 3: n_acc=33, n_no_acc=207, mean_pred_acc=0.1934, mean_pred_no_acc=0.1656, gap=0.0278
+quality-quintile 4: n_acc=46, n_no_acc=194, mean_pred_acc=0.2464, mean_pred_no_acc=0.3050, gap=-0.0586
+
+Mean within-quintile predicted-score gap (accommodation-need minus no-need, matched true_quality): -0.0494
+
+Raw trajectory shape-feature gap by group (whole sample, unmatched):
+  slope: acc_need mean=-0.1365, no_need mean=-0.0487, diff=-0.0878
+  volatility: acc_need mean=0.5300, no_need mean=0.5146, diff=0.0154
+  recovery: acc_need mean=0.1470, no_need mean=0.1649, diff=-0.0179
+  consistency: acc_need mean=-0.6300, no_need mean=-0.6233, diff=-0.0066

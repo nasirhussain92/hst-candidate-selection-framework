@@ -1,0 +1,18 @@
+N = 215, placed = 148, not placed = 67
+Missing values in stage columns: 0
+
+=== Predicting placement status (5-fold CV x 20 repeats, AUC) ===
+static-only  AUC = 0.8686 (sd 0.0458)
+traj-fusion  AUC = 0.9234 (sd 0.0326)
+paired t-test on matched folds: t=14.3642, p=0.000000
+
+=== Predicting salary among placed (N=148), 5-fold CV x 20 repeats, Pearson r ===
+static-only  r = 0.1626 (sd 0.1767)
+traj-fusion  r = 0.1255 (sd 0.1546)
+paired t-test on matched folds: t=-2.7826, p=0.006459
+
+=== Shape-feature means by outcome group ===
+  slope: placed=-1.4973  not_placed=1.9330
+  volatility: placed=7.3876  not_placed=7.4149
+  recovery: placed=6.1841  not_placed=6.9270
+  consistency: placed=-10.4177  not_placed=-10.0166
