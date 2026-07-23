@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite both the paper and this repository."
+type: software
+title: "HST Framework: Code and Data for 'A Hybrid Sentiment–Trajectory AI Framework for Candidate Selection: Beyond Static Evaluation'"
+authors:
+  - family-names: "[FAMILY NAME 1 — FILL IN]"
+    given-names: "[GIVEN NAME 1 — FILL IN]"
+    affiliation: "[AFFILIATION 1 — FILL IN]"
+    orcid: "[ORCID 1, OPTIONAL — FILL IN]"
+  - family-names: "[FAMILY NAME 2 — FILL IN]"
+    given-names: "[GIVEN NAME 2 — FILL IN]"
+    affiliation: "[AFFILIATION 2 — FILL IN]"
+    orcid: "[ORCID 2, OPTIONAL — FILL IN]"
+repository-code: "[GITHUB URL — FILL IN AFTER CREATING REPO]"
+license: MIT
+version: 1.0.0
+date-released: "[YYYY-MM-DD — FILL IN AT RELEASE TIME]"
+doi: "[ZENODO DOI — FILL IN AFTER ARCHIVING TO ZENODO]"
