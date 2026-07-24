@@ -1,5 +1,7 @@
 # A Hybrid Sentiment–Trajectory AI Framework for Candidate Selection: Beyond Static Evaluation
 
+**Authors:** Nasir Hussain (Karachi Institute of Economics and Technology) and [Co-Author — to be added]
+
 Code, synthetic-data generator, and real-data validation supporting the paper
 *"A Hybrid Sentiment–Trajectory AI Framework for Candidate Selection: Beyond
 Static Evaluation."* This repository reproduces every number, table, and
@@ -16,6 +18,8 @@ figure reported in the paper.
 │   ├── neural_proxy.py              # Raw-sequence neural benchmark (§5.3, Table 2)
 │   ├── real_data_validation.py      # Real-data validation on Campus Recruitment data (§6, Table 3, Table 4)
 │   └── make_figure1.py              # Generates Figure 1 (conceptual framework diagram)
+├── notebooks/
+│   └── HST_Framework_Reproducibility.ipynb  # Runnable, cell-by-cell reproduction of Tables 1–4 and Figure 1
 ├── data/
 │   └── Placement_Data_Full_Class.csv  # Campus Recruitment dataset (Roshan, n.d.), CC0 license
 ├── figures/
@@ -53,6 +57,19 @@ the exact output produced for the paper is saved under `results/` for
 reference. All synthetic-data experiments use fixed random seeds, so
 re-running `run_eval.py` and `neural_proxy.py` will reproduce the reported
 numbers exactly.
+
+## Reproducibility notebook
+
+For readers who prefer a single, guided, cell-by-cell walkthrough rather
+than running each script separately, `notebooks/HST_Framework_Reproducibility.ipynb`
+reproduces Tables 1–4 and Figure 1 in one place, with the relevant section
+of the paper referenced next to each result.
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nasirhussain92/hst-candidate-selection-framework/blob/main/notebooks/HST_Framework_Reproducibility.ipynb)
+
+The real-data section of the notebook (Tables 3–4) requires uploading
+`data/Placement_Data_Full_Class.csv` when prompted; every other section
+runs with no setup beyond Colab's pre-installed packages.
 
 ## Data source
 
